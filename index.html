@@ -6,17 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="stykesheet.css"> 
     <style>
+        h1, li {
+            color: blue;
+        }
         h1 {                           /* Selector */
-            color: blue;                   /* Declaration 1 */
+                 /* Declaration 1 */
             font-size: 12px;               /* Declaration 2 */
         }
         li {
-            color: blue;
             font-size: 20px;
         } 
 
-        #gitadd {
-            color: purple;
+        #init {
+            font-weight: 800;
+        }
+
+        .remote {
+            color: red;
+        }
+
+        #clidiv {
+            border: 1px solid red;
         }
     </style>
 </head>
@@ -24,18 +34,23 @@
    <h1>Welcome to our class</h1> 
    <h2>clone it here: https://github.com/Nayar/class20250503.git</h2>
    <h2>Git</h2>
+   <p>A tiny refresher on Git</p>
    <ul>
-        <li>git status</li>
-        <li>git add</li>
+        <li id="init">git init</li>
+        <li id="status">git status</li>
+        <li id="add">git add</li>
         <li>git commit</li>
-        <li>git push origin main</li>
-        <li>git pull origin main</li>
+        <li class="remote">git push origin main</li>
+        <li class="remote">git pull origin main</li>
    </ul>
-   <h2>CLI Commands</h2>
-   <ul>
-        <li>touch filename</li>
-        <li>ls: listing dir contents</li>
-        <li>cd: change directory</li>
-   </ul>
+   <div id="clidiv">
+    <h2>CLI Commands</h2>
+    <p>In this chapter, we are going to recap on CLI commands</p>
+    <ul>
+            <li>touch filename</li>
+            <li>ls: listing dir contents</li>
+            <li>cd: change directory</li>
+    </ul>
+   </div>
 </body>
 </html>
