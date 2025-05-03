@@ -1,0 +1,6 @@
+git init             Creates a new repository
+git status          shows the state of the repository
+git add              
+git commit -m '<message>'   
+git remote add        connects a remote
+git push <remotename> <branch>     push commits
