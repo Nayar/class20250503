@@ -15,6 +15,7 @@
         }
         li {
             font-size: 20px;
+            list-style: korean-hangul-formal;
         } 
 
         #init {
@@ -25,32 +26,98 @@
             color: red;
         }
 
-        #clidiv {
-            border: 1px solid red;
+        #gitpush {
+            color: green;
         }
+
+        div {
+            /* border: 1px solid red; */
+        }
+
+        div + p {
+        background-color: yellow;
+        }
+
+        li {
+            /* display: inline; */
+        }
+
+        li:hover {
+            font-size: 40px;
+            color: brown;
+        }
+
+        #clidiv {
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 50px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        #allcap {
+            text-transform: uppercase;
+        }
+        /* body{ 
+            background-image: url("bg.webp")
+        } */
+
+        #flag > div {
+            width: 50px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #chatbot {
+            position: fixed;
+            bottom: 30px; 
+            right: 30px; 
+        }
+
     </style>
 </head>
 <body>
    <h1>Welcome to our class</h1> 
-   <h2>clone it here: https://github.com/Nayar/class20250503.git</h2>
-   <h2>Git</h2>
-   <p>A tiny refresher on Git</p>
-   <ul>
-        <li id="init">git init</li>
-        <li id="status">git status</li>
-        <li id="add">git add</li>
-        <li>git commit</li>
-        <li class="remote">git push origin main</li>
-        <li class="remote">git pull origin main</li>
-   </ul>
+   <div>
+        <h2>clone it here: https://github.com/Nayar/class20250503.git</h2>
+        <h2>Git</h2>
+        <p id="allcap">A tiny refresher on Git</p>
+        <ul>
+                <li id="init">git init</li>
+                <li id="status">git status</li>
+                <li id="add">git add</li>
+                <li>git commit</li>
+                <li class="remote" id="gitpush">git push origin main</li>
+                <li class="remote">git pull origin main</li>
+        </ul>
+   </div>
    <div id="clidiv">
+    
     <h2>CLI Commands</h2>
-    <p>In this chapter, we are going to recap on CLI commands</p>
-    <ul>
+    <p>In this chapter, we are going to recap on CLI commands
+        <span>It works on</span> <span>Linux</span> <span>Macos</span>
+        <p>but sometimes</p> <p>on windows too</p>
+    </p>
+    <ul style="border: 1px solid green; height: 50px; overflow: visible;">
             <li>touch filename</li>
             <li>ls: listing dir contents</li>
-            <li>cd: change directory</li>
+            <li>cd: change directory
+                <p>A test</p>
+            </li>
     </ul>
    </div>
+   <div id="flag">
+        <div id="blue"></div><div id="white"></div><div id="red"></div>
+   </div>
+   <p>After div</p>
+   <span id="chatbot">Chatbot</span>
 </body>
 </html>
