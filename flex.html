@@ -13,7 +13,8 @@
         .flexcontainer {
             display: flex;
             flex-direction: column; /* row, column, row-reverse, column-reverse */
-            justify-content: center; /* flex-start, flex-end, center, space-between, space-around */ 
+            justify-content: flex-end; /* flex-start, flex-end, center, space-between, space-around */ 
+            align-items: flex-end;
             height: 300px;
             border: 1px dotted red;
             padding: 5px;
@@ -25,7 +26,7 @@
     <h2>row: main axis: left to right; cross axis: top to bottom</h2>
     <h2>column: main axis: top to bottom; cross axis: left to right</h2>
     <h2>column-reverse: main axis: bottom to top; cross-axis: left-right</h2>
-    <span>flex-direction: row; justify-content: flex-end;</span>
+    <h2>flex-direction: row; justify-content (main-axis): flex-start; align-items (cross-axis): flex-start;</h2>
     <div class="flexcontainer">
         <div class="flexitem">Box 1</div>
         <div class="flexitem">Box 2</div>
