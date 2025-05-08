@@ -30,6 +30,21 @@
             right: 0;
             text-transform: uppercase;
         }
+
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+
+            display: flex;
+            text-align: center;           /* horizontal centering */
+    line-height: 100px;           /* vertical centering (match the height) */
+    font-weight: bold;    
+        }
     </style>
   </head>
   <body>
@@ -39,6 +54,11 @@
             <li id="ourproducts">Our Products</li>
         </ul>
     </nav>
+    <div style="border: 1px solid black; width: 25%; height: 300px; position: relative;">
+        <span>
+            NEW
+        </span>
+    </div>
    
   </body>
 </html>
