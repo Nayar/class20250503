@@ -8,16 +8,22 @@
         .flexitem {
             padding: 10px;
             border: 1px dotted blue;
+            min-width: 300px;
         }
 
         .flexcontainer {
             display: flex;
-            flex-direction: column; /* row, column, row-reverse, column-reverse */
-            justify-content: flex-end; /* flex-start, flex-end, center, space-between, space-around */ 
-            align-items: flex-end;
+            flex-direction: row; /* row, column, row-reverse, column-reverse */
+            justify-content: flex-start; /* flex-start, flex-end, center, space-between, space-around */ 
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around; /* multiple-lines */
+
+
             height: 300px;
             border: 1px dotted red;
             padding: 5px;
+            
         }
     </style>
 </head>
@@ -31,6 +37,8 @@
         <div class="flexitem">Box 1</div>
         <div class="flexitem">Box 2</div>
         <div class="flexitem">Box 3</div>
+        <div class="flexitem">Box 4</div>
+        <div class="flexitem">Box 5</div>
     </div>
 </body>
 </html>
