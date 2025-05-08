@@ -16,7 +16,7 @@
             flex-direction: row; /* row, column, row-reverse, column-reverse */
             justify-content: flex-start; /* flex-start, flex-end, center, space-between, space-around */ 
             align-items: flex-start;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             align-content: space-around; /* multiple-lines */
 
 
@@ -35,10 +35,10 @@
     <h2>flex-direction: row; justify-content (main-axis): flex-start; align-items (cross-axis): flex-start;</h2>
     <div class="flexcontainer">
         <div class="flexitem">Box 1</div>
-        <div class="flexitem">Box 2</div>
-        <div class="flexitem">Box 3</div>
-        <div class="flexitem">Box 4</div>
-        <div class="flexitem">Box 5</div>
+        <div class="flexitem" style="align-self: center;">Box 2</div>
+        <div class="flexitem" style="align-self: flex-end;">Box 3</div>
+        <!-- <div class="flexitem">Box 4</div>
+        <div class="flexitem">Box 5</div> -->
     </div>
 </body>
 </html>
