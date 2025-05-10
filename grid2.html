@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .gridcontainer > div {
+            border: 1px dotted green;
+        }
+
+        .gridcontainer {
+            border: 1px dotted blue;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: 1fr 600px 1fr;
+            grid-template-rows: 1fr 10fr 1fr;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Grid Class</h1>
@@ -14,6 +29,9 @@
         <div>Box 4</div>
         <div>Box 5</div>
         <div>Box 6</div>
+        <div>Box 7</div>
+        <div>Box 8</div>
+        <div>Box 9</div>
     </div>
 </body>
 </html>
